@@ -1,0 +1,75 @@
+
+.dashboard {
+  width: 100%;
+  padding: 25px;
+}
+
+.dashboard-header {
+  margin-bottom: 28px;
+}
+
+.dashboard-header h1 {
+  margin: 0 0 8px;
+  color: #0f172a;
+  font-size: 28px;
+}
+
+.dashboard-header p {
+  margin: 0;
+  color: #64748b;
+}
+
+.indicadores {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.cartao-indicador {
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgb(15 23 42 / 5%);
+}
+
+.indicador-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+  color: #64748b;
+}
+
+.cartao-indicador strong {
+  display: block;
+  font-size: clamp(20px, 2.5vw, 28px);
+  overflow-wrap: anywhere;
+}
+
+.receitas strong {
+  color: #059669;
+}
+
+.despesas strong {
+  color: #dc2626;
+}
+
+.saldo strong {
+  color: #2563eb;
+}
+
+.carteira strong {
+  color: #7c3aed;
+}
+
+@media (max-width: 650px) {
+  .indicadores {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard {
+    padding: 16px;
+  }
+}

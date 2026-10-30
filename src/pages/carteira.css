@@ -1,0 +1,22 @@
+
+
+.principal{
+    color:green;
+    width: 100%;
+
+}
+p{
+    display: flex;
+    background-color: #ffff;
+    height: 80px;
+    border-radius: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+.red{
+    color:red;
+    
+    
+}
+
